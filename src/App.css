@@ -90,3 +90,21 @@ a:hover {
     padding: 12px;
   }
 }
+
+.social-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 32px;
+  color: #ff7b00; /* Naranja */
+  transition: 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: scale(1.2);
+}
