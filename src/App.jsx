@@ -1,5 +1,6 @@
 import "./App.css";
 import profile from "./assets/profile.jpg";
+import { FaInstagram, FaFacebook, FaXTwitter, FaGithub } from "react-icons/fa6";
 
 export default function App() {
   return (
@@ -33,6 +34,24 @@ export default function App() {
           <a href="https://github.com/ramiro9833/insta-stay">GitHub</a>
         </div>
       </section>
+
+      <div className="social-container">
+        <a href="https://www.instagram.com/ramiroflores5317?igsh=eDBrMmlzczRidzA3" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="social-icon" />
+        </a>
+
+        <a href="https://www.facebook.com/share/1CJuHWU7fS/" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="social-icon" />
+        </a>
+
+        <a href="https://x.com/Ramirof94791618?t=PaxjKXG0xo_0-xqJUIbSZQ&s=09" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter className="social-icon" />
+        </a>
+
+        <a href="https://github.com/ramiro9833" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="social-icon" />
+        </a>
+      </div>
     </div>
   );
 }
