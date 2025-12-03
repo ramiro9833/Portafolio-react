@@ -1,60 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
   text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e77102, #ff7300);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  transition: transform .2s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.profile:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+h2 {
+  color: #ff7b00;
+}
+
+/* PROJECTS */
+.project {
+  background: #111;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ff7b00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 40px 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile {
+    width: 140px;
+    height: 140px;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 15px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  header {
+    padding: 30px 10px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  h2 {
+    font-size: 1.2rem;
+  }
 
-.social-container {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-icon {
-  font-size: 32px;
-  color: #ff7b00; /* Naranja */
-  transition: 0.2s ease-in-out;
-}
-
-.social-icon:hover {
-  color: white;
-  transform: scale(1.2);
+  .project {
+    padding: 12px;
+  }
 }
